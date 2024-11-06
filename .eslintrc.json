@@ -4,6 +4,7 @@
     "es2021": true
   },
   "extends": ["xo", "prettier"],
+  "ignorePatterns": ["vitest.config.ts"],
   "overrides": [
     {
       "extends": ["xo-typescript", "prettier"],
