@@ -1,5 +1,5 @@
 import createApp from "./components/app/createApp";
-import createMainHeader from "./components/header/createMainHeader";
+import "./styles/styles.css";
 
 const root = document.querySelector(".root");
 
@@ -8,7 +8,4 @@ if (!root) {
 }
 
 const appContent = createApp();
-const mainHeader = createMainHeader();
-
-root.appendChild(mainHeader);
 root.appendChild(appContent);
