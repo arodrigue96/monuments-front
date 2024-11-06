@@ -1,0 +1,17 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #f0f4f8;
+  color: #333333;
+  font-family: Montserrat, sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
