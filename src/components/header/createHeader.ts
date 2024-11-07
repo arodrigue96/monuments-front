@@ -19,4 +19,25 @@ const createHeader = (): HTMLElement => {
   return mainHeader;
 };
 
+export const createSelectionStatus = (): void => {
+  const heading = document.querySelector("h1");
+
+  if (!heading) {
+    throw new Error("Header not found");
+  }
+
+  const monumentSelection = document.querySelectorAll(
+    ".selection-menu__anchor-container",
+  );
+
+  monumentSelection.forEach((anchor) => {
+    const anchorSpan = anchor.children;
+    const anchorText = anchorSpan[0].textContent;
+
+    if (anchorText === heading.textContent) {
+      anchor.classList.add("hover");
+    }
+  });
+};
+
 export default createHeader;
