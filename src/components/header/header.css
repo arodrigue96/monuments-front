@@ -2,4 +2,35 @@
   background-color: #004a7c;
   color: #fff;
   padding: 20px;
+
+  @media (width >= 500px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.selection-menu {
+  display: flex;
+  justify-content: space-between;
+
+  @media (width >= 500px) {
+    gap: 10px;
+    align-items: center;
+  }
+}
+
+.selection-menu__anchor-container {
+  height: 100%;
+}
+
+.selection-menu__link {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 4px;
+}
+
+.hover {
+  background-color: #3e6f8f;
+  border-radius: 4px;
 }
