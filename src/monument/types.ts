@@ -1,11 +1,8 @@
-export interface MonumentLocation {
-  country: string;
-  city: string;
-}
-
-export interface MonumentStructure extends MonumentLocation {
-  id: string;
+export interface Monument {
   name: string;
   description: string;
   imageUrl: string;
+  country: string;
+  city: string;
+  id: string;
 }
