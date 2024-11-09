@@ -1,4 +1,4 @@
-import { createMonumentCardsList } from "../monumentCardsList/createMonumentCardsList";
+import { createMonumentCardsList } from "../../monument/monumentsCardsList/createMonumentsCardsList";
 import createHeader from "../header/createHeader";
 import "./app.css";
 
