@@ -30,7 +30,7 @@
   padding: 4px;
 }
 
-.hover {
+.anchor-container--current-page {
   background-color: #3e6f8f;
   border-radius: 4px;
 }
