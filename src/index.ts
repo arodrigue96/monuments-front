@@ -1,6 +1,7 @@
 import createApp from "./components/app/createApp";
 import { createSelectionStatus } from "./components/header/createHeader";
 import "./styles/styles.css";
+import "@fontsource/montserrat/index.css";
 
 const root = document.querySelector(".root");
 
