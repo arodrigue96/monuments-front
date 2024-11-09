@@ -1,4 +1,4 @@
-import type Monument from "./Monument";
+import { type Monument } from "./types";
 
 const url =
   (import.meta.env.VITE_URL as string) ??
