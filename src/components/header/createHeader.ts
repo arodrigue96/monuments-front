@@ -22,20 +22,16 @@ const createHeader = (): HTMLElement => {
 export const createSelectionStatus = (): void => {
   const heading = document.querySelector("h1");
 
-  if (!heading) {
-    throw new Error("Header not found");
-  }
-
   const monumentSelection = document.querySelectorAll(
     ".selection-menu__anchor-container",
   );
 
-  monumentSelection.forEach((anchor) => {
-    const anchorSpan = anchor.children;
-    const anchorText = anchorSpan[0].textContent;
+  monumentSelection.forEach((anchorContainer) => {
+    const anchor = anchorContainer.children;
+    const anchorText = anchor[0].textContent;
 
-    if (anchorText === heading.textContent) {
-      anchor.classList.add("hover");
+    if (anchorText === heading?.textContent) {
+      anchorContainer.classList.add("anchor-container--current-page");
     }
   });
 };

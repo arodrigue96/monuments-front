@@ -1,4 +1,4 @@
-import createHeader from "./createHeader";
+import createHeader from "../createHeader";
 
 const screen = document.createElement("div");
 afterEach(() => {
