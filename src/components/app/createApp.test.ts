@@ -8,22 +8,37 @@ afterEach(() => {
 
 describe("Given the app component", () => {
   describe("When rendered", () => {
-    test("Then it should show the main header in a header", () => {
+    test("Then it should show the 'Monuments' inside a heading", () => {
+      const expectedTitle = /Monuments/i;
       const app = createApp();
       screen.appendChild(app);
 
-      const header = screen.querySelector("header");
+      const header = screen.querySelector("h1");
+      const title = header?.textContent;
 
-      expect(header).toBeDefined();
+      expect(title).toMatch(expectedTitle);
     });
 
-    test("Then it should show monuments card list", () => {
+    test("Then it should show the 'Monuments' and 'Add monuments inside a anchor each'", () => {
+      const expectedMonumentsSelectionText = /Monuments/i;
+      const expectedAddMonumentSelectionText = /Add Monument/i;
+
       const app = createApp();
       screen.appendChild(app);
 
-      const monumentCardsList = screen.querySelector("ul");
+      const navigationMenu = screen.querySelectorAll(
+        ".selection-menu__anchor-container",
+      );
 
-      expect(monumentCardsList).toBeDefined();
+      const monumentsSelection = navigationMenu[0];
+      const addMonumentsSelection = navigationMenu[1];
+
+      expect(monumentsSelection.textContent).toMatch(
+        expectedMonumentsSelectionText,
+      );
+      expect(addMonumentsSelection.textContent).toMatch(
+        expectedAddMonumentSelectionText,
+      );
     });
   });
 });
