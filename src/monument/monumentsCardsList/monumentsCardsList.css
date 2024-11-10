@@ -5,6 +5,16 @@
   gap: 15px;
 
   @media (width >= 500px) {
-    flex-direction: row;
+    margin: 0 auto;
+  }
+
+  @media (width >= 750px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (width >= 1250px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
