@@ -1,7 +1,36 @@
 .monument-cards-lists__card {
   display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  overflow: hidden;
+  height: 100%;
+  border: 1px solid #000;
+
+  @media (width >= 500px) {
+    width: 350px;
+  }
+}
+
+.card__image {
+  border-radius: 10px;
+  width: auto;
+  object-fit: cover;
+  object-position: top;
+}
+
+.card__monument-information {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .card__title {
   margin: 0;
+}
+
+.card__location {
+  display: flex;
+  justify-content: space-between;
 }
