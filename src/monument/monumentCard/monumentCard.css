@@ -1,0 +1,7 @@
+.monument-cards-lists__card {
+  display: flex;
+}
+
+.card__title {
+  margin: 0;
+}
