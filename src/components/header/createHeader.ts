@@ -8,10 +8,10 @@ const createHeader = (): HTMLElement => {
   <h1>Monuments</h1>
   <ul class='selection-menu'>
     <li class='selection-menu__anchor-container'>
-      <a class='selection-menu__link' href=''><span>Monuments</span></a>
+      <a class='selection-menu__link' href='index.html'><span>Monuments</span></a>
     </li>
     <li class='selection-menu__anchor-container'>
-      <a class='selection-menu__link' href=''><span>Add Monument</span></a>
+      <a class='selection-menu__link' href='src/form/form.html'><span>Add Monument</span></a>
     </li>
   </ul>
   `;
